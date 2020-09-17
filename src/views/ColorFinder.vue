@@ -71,8 +71,8 @@
               </v-card>
               <v-card v-show="cropped" class="ma-0 pa-0" height="100" :style="select_color" ></v-card>
 
-              <div v-show="cropped" class="ma-0 pa-0 overflow-x-auto v-card v-sheet theme--light" id="color_list">
-                <div role="list" class="v-list v-sheet theme--light v-list--two-line">
+              <div v-show="cropped" class="overflow-x-auto v-card v-sheet theme--light ma-0 pa-0" id="color_list">
+                <div role="list" class="v-list v-sheet theme--light v-list--two-line ma-0 pa-0">
                   <div 
                   v-for="item in items" 
                   :key="item.cd"
@@ -90,7 +90,7 @@
                 </div>
                 <infinite-loading @infinite="infiniteHandler" spinner="waveDots"></infinite-loading>
               </div>
-              <v-sheet elevation="1" class="py-1 px-1" id="combobox">
+              <v-sheet elevation="0" class="py-1 px-1" id="combobox">
               <v-chip-group
                 v-model="select"
                 mandatory
