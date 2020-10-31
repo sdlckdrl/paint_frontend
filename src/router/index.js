@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 import ColorList from '@/views/ColorList.vue'
 import ColorFinder from '@/views/ColorFinder.vue'
 import ColorFinder2 from '@/views/ColorFinder2.vue'
+import ColorSum from '@/views/ColorSum.vue'
 import Private from '@/views/Private.vue'
 
 Vue.use(VueRouter)
@@ -28,6 +29,11 @@ Vue.use(VueRouter)
     path: '/color_finder/:RGB',
     name: 'color_finder2',
     component: ColorFinder2
+  },
+  {
+    path: '/color_sum',
+    name: 'color_sum',
+    component: ColorSum
   },
   {
     path: '/private',
