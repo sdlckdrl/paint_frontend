@@ -210,7 +210,7 @@ export default {
           }
         }
       ).then(function(res){
-         _this.$refs.cropper.replace(res.data.path)
+         _this.$refs.cropper.replace("/uploads/"+res.data.filename)
       })
       .catch(function(){
         console.log('FAILURE!!');
