@@ -178,7 +178,7 @@ export default {
       cropped : false,
       imgSrc : '/images/sample.jpg',
       rules: [
-        value => !value || value.size < 2000000 || 'Avatar size should be less than 2 MB!',
+        value => !value || value.size < 15000000 || 'Avatar size should be less than 2 MB!',
       ],
       imgfile:null,
       select_color:'',
