@@ -33,7 +33,7 @@
           <v-file-input
             v-model="imgfile" 
             :rules="rules"
-            accept="image/png, image/jpeg, image/bmp"
+            accept="image/*"
             placeholder="Pick an avatar"
             prepend-icon="mdi-camera"
             label="Avatar"
@@ -178,7 +178,7 @@ export default {
       cropped : false,
       imgSrc : '/images/sample.jpg',
       rules: [
-        value => !value || value.size < 15000000 || 'Avatar size should be less than 2 MB!',
+        value => !value || value.size < (20*1024*1024) || alert('파일용량이 20MB를 넘을수 없습니다!'),
       ],
       imgfile:null,
       select_color:'',
