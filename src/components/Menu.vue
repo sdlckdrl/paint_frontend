@@ -73,6 +73,14 @@
               <v-list-item-title>표준색견본</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          <v-list-item link :to="'/color_list/jevisco'">
+            <v-list-item-action>
+              <v-img src="/images/icon_jevisco.jpg" width="24" class="menu_icon_img"></v-img>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>제비스코</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
           <v-list-item link :to="'/color_finder'">
             <v-list-item-action>
               <v-icon>mdi-palette</v-icon>
